@@ -6,3 +6,88 @@
     border-radius: 50%;
     cursor: pointer;
 }
+.rounded-rect {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 50px -25px black;
+}
+
+.flex-center {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flex-center.left {
+    left: 0px;
+}
+
+.flex-center.right {
+    right: 0px;
+}
+
+.sidebar-content {
+    position: absolute;
+    width: 95%;
+    height: 95%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    color: gray;
+}
+
+.sidebar-toggle {
+    position: absolute;
+    width: 1.3em;
+    height: 1.3em;
+    overflow: visible;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar-toggle.left {
+    right: -1.5em;
+}
+
+.sidebar-toggle.right {
+    left: -1.5em;
+}
+
+.sidebar-toggle:hover {
+    color: #0aa1cf;
+    cursor: pointer;
+}
+
+.sidebar {
+    transition: transform 1s;
+    z-index: 1;
+    width: 300px;
+    height: 100%;
+}
+
+
+.left.collapsed {
+    transform: translateX(-295px);
+}
+
+.right.collapsed {
+    transform: translateX(295px);
+}
+
+button {
+    border: 2px solid #5895a5;
+    font-size: 17px;
+    min-height: 40px;
+    border-radius: 5px;
+    font-family: Bradley Hand, cursive;
+    transition: background-color 0.3s ease,  font-size 0.7s ease;
+}
+button:hover{
+    background-color: rgba(255, 69, 0, 0.55);
+    font-size: 18px;
+}
+.sbutton {
+    margin-top: 5px;
+}
